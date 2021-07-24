@@ -35,7 +35,7 @@
     <!-- Header Start -->
 	<input type="checkbox" id="check"></input>
 	<nav class="navbar navbar-expand-lg navbar-light">
-		<a class="navbar-brand" href="#">
+		<a class="navbar-brand" href="index.html">
 			<img src="assets/logo/Logo.svg" class="pt-1" height="40px" alt="Logo Travelinary">
 		</a>
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -46,12 +46,11 @@
 			<li class="nav-item active">
 				<a class="nav-link nunitoSemiBold" href="index.html">Beranda</a>
 			</li>
-			<li class="nav-item ">
-				<a class="nav-link nunitoSemiBold" href="wisata.html">Wisata</a>
-			</li>
 			<li class="nav-item">
-				<a class="nav-link nunitoSemiBold" href="kuliner.html">Kuliner</a>
-			</li>
+				<a class="nav-link nunitoSemiBold" href="destinasi.html">
+				  Destinasi
+				</a>
+			  </li>
 			<li class="nav-item">
 				<a class="nav-link nunitoSemiBold" href="event.html">Event</a>
 			</li>
@@ -60,14 +59,14 @@
 			</li>
 		  </ul>
 		  <div class="auth">
-			  <div class="d-flex align-items-center">
-				  <img src="assets/icon/Photo Profile.svg" width="40" alt="">
-				  <h5 class="nunitoSemiBold ml-2 my-0">Apin</h5>
-				  <i class="fas ml-2 fa-angle-down"></i>
-			  </div>
-		  </div>
+			<div class="d-flex align-items-center">
+				<img src="assets/icon/Photo Profile.svg" width="40" alt="">
+				<h5 class="nunitoSemiBold ml-2 my-0">Apin</h5>
+				<i class="fas ml-2 fa-angle-down"></i>
+			</div>
 		</div>
-      </nav>
+		</div>
+	  </nav>
       
     <section id="avatar">
         <div class="container">
@@ -104,7 +103,7 @@
 					<a href="javascript:void(0)" class="dropdown-item" data-toggle="modal" data-target=".modal-kuliner" >
 						<i class="fas mr-3 fa-utensils"></i>
 						Kuliner</a>
-					<a class="dropdown-item" href="#">
+					<a class="dropdown-item" data-toggle="modal" data-target=".modal-event" href="javascript:void(0)">
 						<i class="fas mr-3 fa-calendar-alt"></i>
 						Event</a>
 				</div>
@@ -129,9 +128,7 @@
 						<div class="card">
 							<div class="love">
 							<img src="assets/img/wisata/candi-tikus.jpg" alt="candi tikus">
-								<div class="iconLove">
-									<p class="mb-2 ml-3"><i class="fa fa-heart"></i> 920</p>
-								</div>	
+									
 							</div>
 							<div class="desc px-3 py-2">
 								<div class="row">
@@ -157,9 +154,7 @@
 						<div class="card">
 							<div class="love">
 							<img src="assets/img/wisata/candi-tikus.jpg" alt="candi tikus">
-								<div class="iconLove">
-									<p class="mb-2 ml-3"><i class="fa fa-heart"></i> 920</p>
-								</div>	
+									
 							</div>
 							<div class="desc px-3 py-2">
 								<div class="row">
@@ -185,9 +180,7 @@
 						<div class="card">
 							<div class="love">
 							<img src="assets/img/wisata/candi-tikus.jpg" alt="candi tikus">
-								<div class="iconLove">
-									<p class="mb-2 ml-3"><i class="fa fa-heart"></i> 920</p>
-								</div>	
+									
 							</div>
 							<div class="desc px-3 py-2">
 								<div class="row">
@@ -307,45 +300,45 @@
 						<div class="form-group">
 							<label>Jam Buka</label>
 							<div class="d-flex align-items-center mb-2">
-								<p class="my-0 mx-2">Senin</p>
+								<p class="my-0 mx-2 txt-mute1">Senin</p>
 								<input type="text" class="form-control" placeholder="7.00">
-								<p class="my-0 mx-2">Sampai</p>
+								<p class="my-0 mx-2 txt-mute">Sampai</p>
 							<input type="text" class="form-control" placeholder="16.00">
 							</div>
 							<div class="d-flex align-items-center my-2">
-								<p class="my-0 mx-2">Selasa</p>
+								<p class="my-0 mx-2 txt-mute1">Selasa</p>
 								<input type="text" class="form-control" placeholder="7.00">
-								<p class="my-0 mx-2">Sampai</p>
+								<p class="my-0 mx-2 txt-mute">Sampai</p>
 							<input type="text" class="form-control" placeholder="16.00">
 							</div>
 							<div class="d-flex align-items-center my-2">
-								<p class="my-0 mx-2">Rabu</p>
+								<p class="my-0 mx-2 txt-mute1">Rabu</p>
 								<input type="text" class="form-control" placeholder="7.00">
-								<p class="my-0 mx-2">Sampai</p>
+								<p class="my-0 mx-2 txt-mute">Sampai</p>
 							<input type="text" class="form-control" placeholder="16.00">
 							</div>
 							<div class="d-flex align-items-center my-2">
-								<p class="my-0 mx-2">Kamis</p>
+								<p class="my-0 mx-2 txt-mute1">Kamis</p>
 								<input type="text" class="form-control" placeholder="7.00">
-								<p class="my-0 mx-2">Sampai</p>
+								<p class="my-0 mx-2 txt-mute">Sampai</p>
 							<input type="text" class="form-control" placeholder="16.00">
 							</div>
 							<div class="d-flex align-items-center my-2">
-								<p class="my-0 mx-2">Jumat</p>
+								<p class="my-0 mx-2 txt-mute1">Jumat</p>
 								<input type="text" class="form-control" placeholder="7.00">
-								<p class="my-0 mx-2">Sampai</p>
+								<p class="my-0 mx-2 txt-mute">Sampai</p>
 							<input type="text" class="form-control" placeholder="16.00">
 							</div>
 							<div class="d-flex align-items-center my-2">
-								<p class="my-0 mx-2">Sabtu</p>
+								<p class="my-0 mx-2 txt-mute1">Sabtu</p>
 								<input type="text" class="form-control" placeholder="7.00">
-								<p class="my-0 mx-2">Sampai</p>
+								<p class="my-0 mx-2 txt-mute">Sampai</p>
 							<input type="text" class="form-control" placeholder="16.00">
 							</div>
 							<div class="d-flex align-items-center my-2">
-								<p class="my-0 mx-2">Minggu</p>
+								<p class="my-0 mx-2 txt-mute1">Minggu</p>
 								<input type="text" class="form-control" placeholder="7.00">
-								<p class="my-0 mx-2">Sampai</p>
+								<p class="my-0 mx-2 txt-mute">Sampai</p>
 							<input type="text" class="form-control" placeholder="16.00">
 							</div>
 						  </div>
@@ -388,7 +381,7 @@
 							<label for="harga2">Harga</label>
 							<div class="d-flex align-items-center">
 								<input type="text" class="form-control" id="harga2">
-								<p class="my-0 mx-2">Sampai</p>
+								<p class="my-0 mx-2 txt-mute">Sampai</p>
 								<input type="text" class="form-control">
 							</div>
 						  </div>
@@ -467,45 +460,45 @@
 						<div class="form-group">
 							<label>Jam Buka</label>
 							<div class="d-flex align-items-center mb-2">
-								<p class="my-0 mx-2">Senin</p>
+								<p class="my-0 mx-2 txt-mute1">Senin</p>
 								<input type="text" class="form-control" placeholder="7.00">
-								<p class="my-0 mx-2">Sampai</p>
+								<p class="my-0 mx-2 txt-mute">Sampai</p>
 							<input type="text" class="form-control" placeholder="16.00">
 							</div>
 							<div class="d-flex align-items-center my-2">
-								<p class="my-0 mx-2">Selasa</p>
+								<p class="my-0 mx-2 txt-mute1">Selasa</p>
 								<input type="text" class="form-control" placeholder="7.00">
-								<p class="my-0 mx-2">Sampai</p>
+								<p class="my-0 mx-2 txt-mute">Sampai</p>
 							<input type="text" class="form-control" placeholder="16.00">
 							</div>
 							<div class="d-flex align-items-center my-2">
-								<p class="my-0 mx-2">Rabu</p>
+								<p class="my-0 mx-2 txt-mute1">Rabu</p>
 								<input type="text" class="form-control" placeholder="7.00">
-								<p class="my-0 mx-2">Sampai</p>
+								<p class="my-0 mx-2 txt-mute">Sampai</p>
 							<input type="text" class="form-control" placeholder="16.00">
 							</div>
 							<div class="d-flex align-items-center my-2">
-								<p class="my-0 mx-2">Kamis</p>
+								<p class="my-0 mx-2 txt-mute1">Kamis</p>
 								<input type="text" class="form-control" placeholder="7.00">
-								<p class="my-0 mx-2">Sampai</p>
+								<p class="my-0 mx-2 txt-mute">Sampai</p>
 							<input type="text" class="form-control" placeholder="16.00">
 							</div>
 							<div class="d-flex align-items-center my-2">
-								<p class="my-0 mx-2">Jumat</p>
+								<p class="my-0 mx-2 txt-mute1">Jumat</p>
 								<input type="text" class="form-control" placeholder="7.00">
-								<p class="my-0 mx-2">Sampai</p>
+								<p class="my-0 mx-2 txt-mute">Sampai</p>
 							<input type="text" class="form-control" placeholder="16.00">
 							</div>
 							<div class="d-flex align-items-center my-2">
-								<p class="my-0 mx-2">Sabtu</p>
+								<p class="my-0 mx-2 txt-mute1">Sabtu</p>
 								<input type="text" class="form-control" placeholder="7.00">
-								<p class="my-0 mx-2">Sampai</p>
+								<p class="my-0 mx-2 txt-mute">Sampai</p>
 							<input type="text" class="form-control" placeholder="16.00">
 							</div>
 							<div class="d-flex align-items-center my-2">
-								<p class="my-0 mx-2">Minggu</p>
+								<p class="my-0 mx-2 txt-mute1">Minggu</p>
 								<input type="text" class="form-control" placeholder="7.00">
-								<p class="my-0 mx-2">Sampai</p>
+								<p class="my-0 mx-2 txt-mute">Sampai</p>
 							<input type="text" class="form-control" placeholder="16.00">
 							</div>
 						  </div>
@@ -527,6 +520,94 @@
 			</div>
 		</div>
 		<!-- end kuliner -->
+
+			<!-- wisata -->
+			<div class="modal fade modal-wisata" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+				<div class="modal-dialog">
+				  <div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="exampleModalLabel">Publish Wisata</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						  <span aria-hidden="true">&times;</span>
+						</button>
+					  </div>
+					  <div class="modal-body">
+						<form class="pb-4 pt-2">
+							<div class="form-group">
+							  <label for="judul3">Judul</label>
+							  <input type="email" class="form-control" id="judul3">
+							</div>
+							<div class="form-group">
+								<label for="harga3">Harga</label>
+								<div class="d-flex align-items-center">
+									<input type="text" class="form-control" id="harga3">
+									<p class="my-0 mx-2 txt-mute">Sampai</p>
+									<input type="text" class="form-control">
+								</div>
+							  </div>
+							  <div class="form-group">
+								<label for="provinsi3" class="d-block">Provinsi</label>
+								<select class="js-example-basic-single" class="form-control" id="provinsi3" name="state">
+									<option value="Jawa Timur">Jawa Timur</option>
+									<option value="Jawa Barat">Jawa Barat</option>
+									<option value="Jawa Tengah">Jawa Tengah</option>
+									<option value="Sulawesi Tengah">Sulawesi Tengah</option>
+									<option value="Sulawesi Utara">Sulawesi Utara</option>
+									<option value="Sulawesi Barat">Sulawesi Barat</option>
+									<option value="Sulawesi Selatan">Sulawesi Selatan</option>
+									<option value="Kalimantan Timur">Kalimantan Timur</option>
+									<option value="Kalimantan Selatan">Kalimantan Selatan</option>
+									<option value="Kalimantan Tengah">Kalimantan Tengah</option>
+									<option value="Kalimantan Barat">Kalimantan Barat</option>
+								  </select>
+							  </div>
+							  <div class="form-group">
+								<label for="kota3">Kota</label>
+								<select class="js-example-basic-multiple" id="kota3" style="width:100%;" name="states[]" multiple="multiple">
+									<option value="Mojokerto">Mojokerto</option>
+									<option value="Surabaya">Surabaya</option>
+									<option value="Malang">Malang</option>
+									<option value="Probolinggo">Probolinggo</option>
+									<option value="Kediri">Kediri</option>
+									<option value="Blitar">Blitar</option>
+								</select>
+							  </div>
+								
+							  <div class="form-group">
+								<label for="alamat3">Tanggal Event</label>
+								<input type="date" class="form-control" id="alamat3">
+							  </div>
+			
+							  <div class="form-group col-12 d-flex p-0 align-items-center mt-4">
+								<div class="col-8 pl-0">
+									<input type="file" id="fotoEvent"
+									name="photo" style="display:none"
+									onchange="document.getElementById('filename').value=this.value">
+									<input type="text" placeholder="Foto" class="form-control" id="filename">
+								</div>
+								<div class="col-4 p-0">
+									<input type="button" class="btn btn-pill-stroke bg-white w-100" value="Tambah Foto"
+									onclick="document.getElementById('fotoEvent').click()">
+								</div>
+							</div>
+							  <div class="form-group">
+								  <label for="description">Deskripsi</label>
+								  <textarea name="deskripsi" id="description" style="width:100%;" rows="4"></textarea>
+							  </div>
+							<div class="d-flex align-items-center">
+								<img src="assets/icon/Small Mark.svg" width="24" alt="">
+								<p class="m-0 ml-2">
+								Tunggu maksimal 1X24 jam untuk di setujui admin
+								</p>
+							</div>
+							<button type="submit" class="btn btn-pill w-100 px-4 mt-3">Publish</button>
+						  </form>
+					  </div>
+					  <form>
+				  </div>
+				</div>
+			</div>
+			<!-- end wisata -->
 		<!-- end modal -->
 	</section>
 
