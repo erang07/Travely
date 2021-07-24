@@ -62,7 +62,6 @@
 			<div class="d-flex align-items-center">
 				<img src="assets/icon/Photo Profile.svg" width="40" alt="">
 				<h5 class="nunitoSemiBold ml-2 my-0">Apin</h5>
-				<i class="fas ml-2 fa-angle-down"></i>
 			</div>
 		</div>
 		</div>
@@ -74,9 +73,8 @@
 				<img src="assets/icon/Photo Profile.svg" width="100" alt="">
 				<div class="avatar ml-4">
 					<h2>Apin</h2>
-					<button type="button" class="btn btn-gray px-4 nunitoRegular" data-toggle="modal" data-target="#exampleModal">
-						Edit Profile
-					  </button>
+					  <a href="javascript:void(0)" class="btn btn-gray px-4" data-toggle="modal" data-target=".modal-profile">
+						Edit Profile</a>
 				</div>
 			</div>
         </div>
@@ -103,7 +101,7 @@
 					<a href="javascript:void(0)" class="dropdown-item" data-toggle="modal" data-target=".modal-kuliner" >
 						<i class="fas mr-3 fa-utensils"></i>
 						Kuliner</a>
-					<a class="dropdown-item" data-toggle="modal" data-target=".modal-event" href="javascript:void(0)">
+					<a  href="javascript:void(0)" class="dropdown-item" data-toggle="modal" data-target=".modal-event">
 						<i class="fas mr-3 fa-calendar-alt"></i>
 						Event</a>
 				</div>
@@ -112,94 +110,60 @@
 			<div class="row my-4">
 				<ul class="nav nav-tabs col-12">
 					<li class="nav-item">
-					  <a class="nav-link active" href="#">Wisata <span class="total">2</span></a>
+					  <a class="nav-link active" href="profileWisata.html">Wisata <span class="total">2</span></a>
 					</li>
 					<li class="nav-item">
-					  <a class="nav-link" href="#">Kuliner <span class="total">3</span></a>
+					  <a class="nav-link" href="profileKuliner.html">Kuliner <span class="total">3</span></a>
 					</li>
 					<li class="nav-item">
-					  <a class="nav-link" href="#">Event <span class="total">5</span></a>
+					  <a class="nav-link" href="profileEvent.html">Event <span class="total">5</span></a>
 					</li>
 				  </ul>
 			</div>
 			<div class="row">
-				<div class="col-12 col-md-6 col-lg-4 my-3">
-                    <a href="">
-						<div class="card">
-							<div class="love">
-							<img src="assets/img/wisata/candi-tikus.jpg" alt="candi tikus">
-									
-							</div>
-							<div class="desc px-3 py-2">
-								<div class="row">
-									<div class="col-9 ">
-										<h4 class="mb-1 nunitoBold">Candi Tikus</h4>
-								<p class="mb-1"><i class="fa fa-map-marker"></i>Mojokerto, Jawa Timur</p>
-								<p class="price mb-1">Rp 10,000</p>
-									</div>
-									<div class="col-3 align-self-center justify-content-center d-flex">
-										<p class="nunitoBold textOrange  mb-0">Nov <span class="date">17</span></p>
-									</div>
+				<div class="col-12 col-lg-3 col-md-4 my-2">
+					<a href="">
+                        <div class="card">
+                            <div class="love">
+                                <img src="assets/img/wisata/candi-tikus.jpg" alt="candi tikus">
+								<div class="statusIcon">
+									<p class="btn btn-gray text-warning px-3">Proses</p>
 								</div>
-								
-								
-							<p class="information">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet quaerat maiores officia maxime rerum...</p>
-							</div>
-							
-						</div>
-					</a>    
+                            </div>
+                            <div class="desc px-3 py-2">
+                                <h4 class="mb-1 nunitoBold">Candi Tikus</h4>
+                                <p class="mb-1"><i class="fa fa-map-marker"></i>Mojokerto, Jawa Timur</p>
+                                <p class="price mb-1">Rp 10,000</p>
+                                <div class="d-flex align-self-center">
+                                    <img src="assets/icon/Stars.svg" height="23" alt="">
+                                    <p class="totalComments">(149)</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </a>
 				</div>
-				<div class="col-12 col-md-6 col-lg-4 my-3">
+				<div class="col-12 col-lg-3 col-md-4 my-2">
                     <a href="">
-						<div class="card">
-							<div class="love">
-							<img src="assets/img/wisata/candi-tikus.jpg" alt="candi tikus">
-									
-							</div>
-							<div class="desc px-3 py-2">
-								<div class="row">
-									<div class="col-9 ">
-										<h4 class="mb-1 nunitoBold">Candi Tikus</h4>
-								<p class="mb-1"><i class="fa fa-map-marker"></i>Mojokerto, Jawa Timur</p>
-								<p class="price mb-1">Rp 10,000</p>
-									</div>
-									<div class="col-3 align-self-center justify-content-center d-flex">
-										<p class="nunitoBold textOrange  mb-0">Nov <span class="date">17</span></p>
-									</div>
+                        <div class="card">
+                            <div class="love">
+                                <img src="assets/img/wisata/candi-tikus.jpg" alt="candi tikus">
+								<div class="statusIcon">
+									<p class="btn btn-gray text-success px-3">Success</p>
 								</div>
-								
-								
-							<p class="information">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet quaerat maiores officia maxime rerum...</p>
-							</div>
-							
-						</div>
-					</a>    
-				</div>
-				<div class="col-12 col-md-6 col-lg-4 my-3">
-                    <a href="">
-						<div class="card">
-							<div class="love">
-							<img src="assets/img/wisata/candi-tikus.jpg" alt="candi tikus">
-									
-							</div>
-							<div class="desc px-3 py-2">
-								<div class="row">
-									<div class="col-9 ">
-										<h4 class="mb-1 nunitoBold">Candi Tikus</h4>
-								<p class="mb-1"><i class="fa fa-map-marker"></i>Mojokerto, Jawa Timur</p>
-								<p class="price mb-1">Rp 10,000</p>
-									</div>
-									<div class="col-3 align-self-center justify-content-center d-flex">
-										<p class="nunitoBold textOrange  mb-0">Nov <span class="date">17</span></p>
-									</div>
-								</div>
-								
-								
-							<p class="information">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet quaerat maiores officia maxime rerum...</p>
-							</div>
-							
-						</div>
-					</a>    
+                            </div>
+                            <div class="desc px-3 py-2">
+                                <h4 class="mb-1 nunitoBold">Candi Tikus</h4>
+                                <p class="mb-1"><i class="fa fa-map-marker"></i>Mojokerto, Jawa Timur</p>
+                                <p class="price mb-1">Rp 10,000</p>
+                                <div class="d-flex align-self-center">
+                                    <img src="assets/icon/Stars.svg" height="23" alt="">
+                                    <p class="totalComments">(149)</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </a>
                 </div>
 
 			</div>
@@ -225,9 +189,11 @@
 							<label for="harga">Harga</label>
 							<input type="text" class="form-control" id="harga">
 						  </div>
+						  
+						  		  
 						  <div class="form-group">
-							<label for="provinsi" class="d-block">Provinsi</label>
-							<select class="js-example-basic-single" class="form-control" id="provinsi" name="state">
+							<label for="provinsi23" class="d-block">Provinsi</label>
+							<select class="js-example-basic-single" class="form-control" id="provinsi23" name="state">
 								<option value="Jawa Timur">Jawa Timur</option>
 								<option value="Jawa Barat">Jawa Barat</option>
 								<option value="Jawa Tengah">Jawa Tengah</option>
@@ -242,8 +208,8 @@
 							  </select>
 						  </div>
 						  <div class="form-group">
-							<label for="kota">Kota</label>
-							<select class="js-example-basic-multiple" style="width:100%;" name="states[]" multiple="multiple">
+							<label for="kota32">Kota</label>
+							<select class="js-example-basic-multiple" id="kota32" style="width:100%;" name="states[]" multiple="multiple">
 								<option value="Mojokerto">Mojokerto</option>
 								<option value="Surabaya">Surabaya</option>
 								<option value="Malang">Malang</option>
@@ -252,7 +218,7 @@
 								<option value="Blitar">Blitar</option>
 							</select>
 						  </div>
-							
+
 						  <div class="form-group">
 							<label for="alamat">Alamat</label>
 							<input type="text" class="form-control" id="alamat">
@@ -260,40 +226,40 @@
 		
 						  <div class="form-group col-12 d-flex p-0 align-items-center mt-4">
 							<div class="col-8 pl-0">
-								<input type="file" id="foto"
+								<input type="file" id="foto1"
 								name="photo" style="display:none"
-								onchange="document.getElementById('filename').value=this.value">
-								<input type="text" placeholder="Foto 1" class="form-control" id="filename">
+								onchange="document.getElementById('filename2').value=this.value">
+								<input type="text" placeholder="Foto 1" class="form-control" id="filename2">
 							</div>
 							<div class="col-4 p-0">
 								<input type="button" class="btn btn-pill-stroke bg-white w-100" value="Tambah Foto"
-								onclick="document.getElementById('foto').click()">
+								onclick="document.getElementById('foto1').click()">
 							</div>
 						</div>
 		
 						<div class="form-group col-12 d-flex p-0 align-items-center mt-4">
 							<div class="col-8 pl-0">
-								<input type="file" id="foto"
+								<input type="file" id="foto2"
 								name="photo" style="display:none"
-								onchange="document.getElementById('filename').value=this.value">
-								<input type="text" placeholder="Foto 2" class="form-control" id="filename">
+								onchange="document.getElementById('filename3').value=this.value">
+								<input type="text" placeholder="Foto 2" class="form-control" id="filename3">
 							</div>
 							<div class="col-4 p-0">
 								<input type="button" class="btn btn-pill-stroke bg-white w-100" value="Tambah Foto"
-								onclick="document.getElementById('foto').click()">
+								onclick="document.getElementById('foto2').click()">
 							</div>
 						</div>
 		
 						<div class="form-group col-12 d-flex p-0 align-items-center mt-4">
 							<div class="col-8 pl-0">
-								<input type="file" id="foto"
+								<input type="file" id="foto13"
 								name="photo" style="display:none"
-								onchange="document.getElementById('filename').value=this.value">
-								<input type="text" placeholder="Foto 3" class="form-control" id="filename">
+								onchange="document.getElementById('filename4').value=this.value">
+								<input type="text" placeholder="Foto 3" class="form-control" id="filename4">
 							</div>
 							<div class="col-4 p-0">
 								<input type="button" class="btn btn-pill-stroke bg-white w-100" value="Tambah Foto"
-								onclick="document.getElementById('foto').click()">
+								onclick="document.getElementById('foto13').click()">
 							</div>
 						</div>
 		
@@ -343,8 +309,8 @@
 							</div>
 						  </div>
 						  <div class="form-group">
-							  <label for="description">Deskripsi</label>
-							  <textarea name="deskripsi" id="description" style="width:100%;" rows="4"></textarea>
+							  <label for="description1">Deskripsi</label>
+							  <textarea name="deskripsi" id="description1" style="width:100%;" rows="4"></textarea>
 						  </div>
 						<div class="d-flex align-items-center">
 							<img src="assets/icon/Small Mark.svg" width="24" alt="">
@@ -385,9 +351,11 @@
 								<input type="text" class="form-control">
 							</div>
 						  </div>
+						  
+						  		  
 						  <div class="form-group">
-							<label for="provinsi2" class="d-block">Provinsi</label>
-							<select class="js-example-basic-single" class="form-control" id="provinsi2" name="state">
+							<label for="provinsi39" class="d-block">Provinsi</label>
+							<select class="js-example-basic-single" class="form-control" id="provinsi39" name="state">
 								<option value="Jawa Timur">Jawa Timur</option>
 								<option value="Jawa Barat">Jawa Barat</option>
 								<option value="Jawa Tengah">Jawa Tengah</option>
@@ -402,8 +370,8 @@
 							  </select>
 						  </div>
 						  <div class="form-group">
-							<label for="kota2">Kota</label>
-							<select class="js-example-basic-multiple" id="kota2" style="width:100%;" name="states[]" multiple="multiple">
+							<label for="kota39">Kota</label>
+							<select class="js-example-basic-multiple" id="kota39" style="width:100%;" name="states[]" multiple="multiple">
 								<option value="Mojokerto">Mojokerto</option>
 								<option value="Surabaya">Surabaya</option>
 								<option value="Malang">Malang</option>
@@ -422,8 +390,8 @@
 							<div class="col-8 pl-0">
 								<input type="file" id="foto4"
 								name="photo" style="display:none"
-								onchange="document.getElementById('filename').value=this.value">
-								<input type="text" placeholder="Foto 1" class="form-control" id="filename">
+								onchange="document.getElementById('filename5').value=this.value">
+								<input type="text" placeholder="Foto 1" class="form-control" id="filename5">
 							</div>
 							<div class="col-4 p-0">
 								<input type="button" class="btn btn-pill-stroke bg-white w-100" value="Tambah Foto"
@@ -433,14 +401,14 @@
 		
 						<div class="form-group col-12 d-flex p-0 align-items-center mt-4">
 							<div class="col-8 pl-0">
-								<input type="file" id="foto2"
+								<input type="file" id="foto12"
 								name="photo" style="display:none"
-								onchange="document.getElementById('filename').value=this.value">
-								<input type="text" placeholder="Foto 2" class="form-control" id="filename">
+								onchange="document.getElementById('filename6').value=this.value">
+								<input type="text" placeholder="Foto 2" class="form-control" id="filename6">
 							</div>
 							<div class="col-4 p-0">
 								<input type="button" class="btn btn-pill-stroke bg-white w-100" value="Tambah Foto"
-								onclick="document.getElementById('foto2').click()">
+								onclick="document.getElementById('foto12').click()">
 							</div>
 						</div>
 		
@@ -448,8 +416,8 @@
 							<div class="col-8 pl-0">
 								<input type="file" id="foto3"
 								name="photo" style="display:none"
-								onchange="document.getElementById('filename').value=this.value">
-								<input type="text" placeholder="Foto 3" class="form-control" id="filename">
+								onchange="document.getElementById('filename7').value=this.value">
+								<input type="text" placeholder="Foto 3" class="form-control" id="filename7">
 							</div>
 							<div class="col-4 p-0">
 								<input type="button" class="btn btn-pill-stroke bg-white w-100" value="Tambah Foto"
@@ -503,8 +471,8 @@
 							</div>
 						  </div>
 						  <div class="form-group">
-							  <label for="description">Deskripsi</label>
-							  <textarea name="deskripsi" id="description" style="width:100%;" rows="4"></textarea>
+							  <label for="description2">Deskripsi</label>
+							  <textarea name="deskripsi" id="description2" style="width:100%;" rows="4"></textarea>
 						  </div>
 						<div class="d-flex align-items-center">
 							<img src="assets/icon/Small Mark.svg" width="24" alt="">
@@ -521,12 +489,12 @@
 		</div>
 		<!-- end kuliner -->
 
-			<!-- wisata -->
-			<div class="modal fade modal-wisata" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+			<!-- Event -->
+			<div class="modal fade modal-event" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
 				<div class="modal-dialog">
 				  <div class="modal-content">
 					<div class="modal-header">
-						<h5 class="modal-title" id="exampleModalLabel">Publish Wisata</h5>
+						<h5 class="modal-title" id="exampleModalLabel">Publish Event</h5>
 						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 						  <span aria-hidden="true">&times;</span>
 						</button>
@@ -545,6 +513,17 @@
 									<input type="text" class="form-control">
 								</div>
 							  </div>
+
+							  <div class="form-group">
+								<label for="address">Alamat</label>
+									<input type="text" class="form-control" id="address">
+							  </div>
+
+							  <div class="form-group">
+								<label for="goomap">Link Google Map</label>
+									<input type="text" class="form-control" id="goomap">
+							  </div>
+							  
 							  <div class="form-group">
 								<label for="provinsi3" class="d-block">Provinsi</label>
 								<select class="js-example-basic-single" class="form-control" id="provinsi3" name="state">
@@ -582,8 +561,8 @@
 								<div class="col-8 pl-0">
 									<input type="file" id="fotoEvent"
 									name="photo" style="display:none"
-									onchange="document.getElementById('filename').value=this.value">
-									<input type="text" placeholder="Foto" class="form-control" id="filename">
+									onchange="document.getElementById('filename1').value=this.value">
+									<input type="text" placeholder="Foto" class="form-control" id="filename1">
 								</div>
 								<div class="col-4 p-0">
 									<input type="button" class="btn btn-pill-stroke bg-white w-100" value="Tambah Foto"
@@ -591,8 +570,8 @@
 								</div>
 							</div>
 							  <div class="form-group">
-								  <label for="description">Deskripsi</label>
-								  <textarea name="deskripsi" id="description" style="width:100%;" rows="4"></textarea>
+								  <label for="description3">Deskripsi</label>
+								  <textarea name="deskripsi" id="description3" style="width:100%;" rows="4"></textarea>
 							  </div>
 							<div class="d-flex align-items-center">
 								<img src="assets/icon/Small Mark.svg" width="24" alt="">
@@ -608,7 +587,74 @@
 				</div>
 			</div>
 			<!-- end wisata -->
-		<!-- end modal -->
+
+			<!-- edit profile -->
+			<div class="modal fade modal-profile" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+				<div class="modal-dialog">
+				  <div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="exampleModalLabel">Edit Profile</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						  <span aria-hidden="true">&times;</span>
+						</button>
+					  </div>
+					  <div class="modal-body">
+						<form class="pb-4 pt-2">
+							<div class="form-group">
+							  <label for="nama">Nama</label>
+							  <input type="text" class="form-control" id="nama">
+							</div>
+							<div class="form-group col-12 d-flex p-0 align-items-center mt-4">
+								<div class="col-8 pl-0">
+									<input type="file" id="foto21"
+									name="photo" style="display:none"
+									onchange="document.getElementById('filename81').value=this.value">
+									<input type="text" placeholder="Pilih Foto" class="form-control" id="filename81">
+								</div>
+								<div class="col-4 p-0">
+									<input type="button" class="btn btn-pill-stroke bg-white w-100" value="Ubah Foto"
+									onclick="document.getElementById('foto21').click()">
+								</div>
+							</div>
+							  <div class="form-group">
+								<label for="provinsi2" class="d-block">Provinsi</label>
+								<select class="js-example-basic-single" class="form-control" id="provinsi2" name="state">
+									<option value="Jawa Timur">Jawa Timur</option>
+									<option value="Jawa Barat">Jawa Barat</option>
+									<option value="Jawa Tengah">Jawa Tengah</option>
+									<option value="Sulawesi Tengah">Sulawesi Tengah</option>
+									<option value="Sulawesi Utara">Sulawesi Utara</option>
+									<option value="Sulawesi Barat">Sulawesi Barat</option>
+									<option value="Sulawesi Selatan">Sulawesi Selatan</option>
+									<option value="Kalimantan Timur">Kalimantan Timur</option>
+									<option value="Kalimantan Selatan">Kalimantan Selatan</option>
+									<option value="Kalimantan Tengah">Kalimantan Tengah</option>
+									<option value="Kalimantan Barat">Kalimantan Barat</option>
+								  </select>
+							  </div>
+							  <div class="form-group">
+								<label for="kota2">Kota</label>
+								<select class="js-example-basic-multiple" id="kota2" style="width:100%;" name="states[]" multiple="multiple">
+									<option value="Mojokerto">Mojokerto</option>
+									<option value="Surabaya">Surabaya</option>
+									<option value="Malang">Malang</option>
+									<option value="Probolinggo">Probolinggo</option>
+									<option value="Kediri">Kediri</option>
+									<option value="Blitar">Blitar</option>
+								</select>
+							  </div>
+			
+
+			
+							<button type="submit" class="btn btn-pill w-100 px-4 mt-3">Edit Profile</button>
+						  </form>
+					  </div>
+					  <form>
+				  </div>
+				</div>
+			</div>
+			<!-- end edit profile -->
+			<!-- end modal -->
 	</section>
 
 

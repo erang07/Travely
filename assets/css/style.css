@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: #FAFAEC;
+  background-color: #FBF9E8;
   overflow-x: hidden;
   font-family: "Samsung Sans Regular" !important;
 }
@@ -34,11 +34,13 @@ body {
 /* lora = medium,lora semi bold,lora bold */
 /* nunito = regular,nunito semi bold,nunito bold */
 
-h1,h2,h3,h4,h5,h6,p,small,span,a,Label,button{
+h1,h2,h3,h4,h5,h6,p,small,span,a,label,button,input{
   font-family: 'Nunito', sans-serif;
   color: var(--first-text);
 }
-
+input::placeholder{
+  font-family: 'Nunito', sans-serif;
+}
 .loraMedium{
   font-family: 'Lora', serif !important;
   font-weight: 500;
@@ -205,6 +207,14 @@ a.dropdown-item:hover{
 .card:hover{
   box-shadow: var(--box-shadow);
   transition-duration: 0.3s;
+}
+.card .statusIcon{
+  position: absolute;
+  top:0;
+  right:0;
+}
+.card .statusIcon p{
+  margin: 10px;
 }
 /* end card */
 
