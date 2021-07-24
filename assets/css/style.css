@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: #FFFDF0;
+  background-color: #FAFAEC;
   overflow-x: hidden;
   font-family: "Samsung Sans Regular" !important;
 }
@@ -9,8 +9,9 @@ body {
 /* template travelinary */
 :root{
   --color-orange: #FABC02;
-  --color-yellow: #FEFE33;
+  --color-yellow: #EBEB58;
   --color-green: #CCE52D;
+  --color-red: #FF6A6A;
 
   --first-text: #343429;
   --second-text: #575746;
@@ -33,7 +34,7 @@ body {
 /* lora = medium,lora semi bold,lora bold */
 /* nunito = regular,nunito semi bold,nunito bold */
 
-h1,h2,h3,h4,h5,h6,p,small,span,a{
+h1,h2,h3,h4,h5,h6,p,small,span,a,Label,button{
   font-family: 'Nunito', sans-serif;
   color: var(--first-text);
 }
@@ -74,6 +75,22 @@ h1,h2,h3,h4,h5,h6,p,small,span,a{
   letter-spacing: 0.5px;
   font-weight: bold;
 }
+.btn-pill-large{
+  background-color: var(--color-orange);
+  border-radius:20px;
+  color: white;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  letter-spacing: 0.5px;
+  font-weight: bold;
+}
+.btn-pill-disable{
+  background-color: rgba(250, 188, 2, 0.1);
+  border-radius:20px;
+  color: var(--first-text);
+  letter-spacing: 0.5px;
+  font-weight: bold;
+}
 .btn-pill-stroke{
   border:1px solid var(--color-orange);
   border-radius:20px;
@@ -81,15 +98,18 @@ h1,h2,h3,h4,h5,h6,p,small,span,a{
   letter-spacing: 0.5px;
   font-weight: bold;
 }
+
 a:hover{
   text-decoration: none !important;
   color: var(--color-orange) !important;
 }
-a.btn-pill{
-  transition-duration: 0.2s;
-  transition-property: background-color;
-}
 a.btn-pill:hover{
+  transform: scale(1.06);
+  transition: 0.3s;
+  text-decoration: none !important;
+  color:white !important;
+}
+a.btn-pill-large:hover{
   transform: scale(1.06);
   transition: 0.3s;
   text-decoration: none !important;
@@ -100,7 +120,78 @@ a.btn-pill-stroke:hover{
   transition: 0.3s;
   text-decoration: none !important;
 }
+a.btn-pill-disable:hover{
+  transform: scale(1.06);
+  transition: 0.3s;
+  text-decoration: none !important;
+}
 /* end btn rounded */
+
+/* dropdown */
+.dropdown-menu{
+  box-shadow: var(--box-shadow);  
+  border: none;
+  margin-top: 20px;
+  border-radius: 10px;
+  padding: 15px;
+}
+.dropdown-menu a.dropdown-item{
+  font-size: 18px;
+}
+a.dropdown-item:hover{
+  color: black !important;
+}
+.dropdown-toggle::after{
+  display: none;
+}
+.dropdown-menu i.fa-chart-bar{
+  color: var(--color-orange);
+}
+.dropdown-menu i.fa-heart{
+  color: var(--color-red);
+}
+.dropdown-menu i.fa-map-marker-alt{
+  color: var(--color-green);
+}
+.dropdown-menu i.fa-map-marked-alt{
+  color: var(--color-orange);
+}
+.dropdown-menu i.fa-utensils{
+  color: var(--color-green);
+}
+.dropdown-menu i.fa-calendar-alt{
+  color: var(--color-yellow);
+}
+.js-example-basic-single{
+  width: 200px;
+  height: 60px;
+}
+.js-example-basic-multiple{
+  width: 200px;
+  height: 60px;
+}
+.filterContent{
+  margin-top: -90px;
+  position: relative;
+  opacity: 0;
+}
+.filterButton{
+  z-index: 2;
+  position: relative;
+}
+.filterAnimation{
+  animation: filterShow 0.6s ease-out alternate forwards;
+}
+@keyframes filterShow{
+  from{
+    opacity: 0;
+    margin-top: -90px;
+  }to{
+    margin-top: 0px;
+    opacity: 1;
+  }
+}
+/* dropdown */
 
 /* card */
 .card:hover{
@@ -160,6 +251,12 @@ background-color: rgba(250, 188, 2, 0.1) !important;
 }
 /* end owl carousel */
 
+/* form */
+form textarea{
+  border: 1px solid var(--third-text) !important;
+  border-radius: 6px;
+}
+/* end form */
 
 /* end templatetravelinary */
 
@@ -174,6 +271,9 @@ nav {
   z-index: 10;
 }
 
+nav i.fa-angle-down{
+  font-size: 14px;
+}
 
 nav.black {
   left: 0;
@@ -239,6 +339,33 @@ nav ul li a:hover {
   background-color: rgba(250, 188, 2, 0.1);
   padding: 8px 24px;
   border-radius: 20px;
+}
+.banner .animation1{
+  opacity: 0;
+  animation: leftToRight 0.6s ease-in forwards;
+}
+.banner .animation2{
+  opacity: 0;
+  animation: leftToRight 0.6s 0.6s ease-in forwards;
+} 
+.banner .animation3{
+  opacity: 0;
+  animation: leftToRight 0.6s 1.2s ease-in forwards;
+} 
+.banner .animation4{
+  opacity: 0;
+  animation: leftToRight 0.6s 1.7s ease-in forwards;
+} 
+@keyframes leftToRight{
+  from{
+    opacity: 0;
+  }to{
+    opacity: 1;
+    }
+}
+.banner .btn-pill{
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 .banner p.desc{
   font-size: 18px;
@@ -391,10 +518,181 @@ nav ul li a:hover {
   font-size: 16px;
   margin-top: 10px;
 }
+
 /* end event section */
 
 
+/* destination page */
+#category{
+  margin-top: 6rem;
+}
+#categoryCard{
+  margin-top: 4rem;
+}
+#categoryCard .iconLove{
+  position: absolute;
+  bottom: 0;
+  left:0;
+  width: 100%;
+  padding-top: 20px;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0));
+}
+.totalComments{
+  color: var(--second-text);
+  margin-left: 10px;
+}
+.searchPindev input::placeholder{
+  color: var(--first-text);
+}
+.searchPindev input{
+  background-color: transparent;
+  outline: none;
+  padding-left: 50px;
+  background-color: white;
+  width: 300px;
+  border: none;
+  height: 40px;
+  font-family: nunito, sans-serif;
+  border-radius: 40px ;
+}
 
+.searchPindev{
+  position: relative;
+}
+.btn-gray{
+  background-color: white;
+  border:none ;
+  color: var(--first-text);
+  border-radius: 20px;
+}
+.searchPindev::before{
+  content: '\f002';
+  font-size: 20px;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 600;
+  color: var(--first-text);
+  top: 50%;
+  transform: translateY(-50%);
+  position: absolute;
+  left: 15px;
+}
+#categoryCard .card .iconLove p{
+  color: white;
+}
+#categoryCard .card .love{
+  position: relative;
+}
+#categoryCard .card img{
+  width: 100px;
+}
+#categoryCard .card .love img{
+  width: 100%;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+#categoryCard .desc i{
+  color: var(--color-green);
+  margin-right: 10px;
+}
+#categoryCard .card{
+  width: 100%;
+  border:none;
+  background-color: rgb(255, 255, 255);
+  border-radius: 20px;
+}
+#categoryCard .event .card .date{
+  color: var(--color-orange);
+  display: block;
+  font-size: 28px;
+  font-weight: bold;
+}
+#categoryCard .event .information{
+  color: var(--second-text);
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.select2-container .select2-selection--single {
+  height: 38px !important;
+  border-color: #ced4da !important;
+  padding-top: 4px;
+  }
+  .select2-selection__arrow {
+    margin-top: 4px;
+    margin-right: 4px;
+  }
+  .select2-container .select2-selection--multiple {
+    min-height: 38px !important;
+    border-color: #ced4da !important;  
+  }
+  
+/* end destination page */
+
+
+/* profile page */
+#avatar{
+  margin: 6rem 0;
+}
+#profilePost{
+  margin: 6rem 0;
+}
+#profilePost .iconLove{
+  position: absolute;
+  bottom: 0;
+  left:0;
+  width: 100%;
+  padding-top: 20px;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0));
+}
+#profilePost .card .iconLove p{
+  color: white;
+}
+#profilePost .card .love{
+  position: relative;
+}
+#profilePost .card img{
+  width: 100px;
+}
+#profilePost .card .love img{
+  width: 100%;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+#profilePost .desc i{
+  color: var(--color-green);
+  margin-right: 10px;
+}
+#profilePost .card{
+  width: 100%;
+  border:none;
+  background-color: rgb(255, 255, 255);
+  border-radius: 20px;
+}
+
+#profilePost .nav-tabs .nav-link.active{
+  background-color: transparent;
+  color: var(--first-text);
+}
+#profilePost .nav-tabs .total{
+  font-weight: 400;
+  color: var(--third-text);
+}
+#profilePost .nav-tabs .nav-link{
+  font-weight: bold;
+  color: var(--third-text);
+}
+#profilePost .card .date{
+  color: var(--color-orange);
+  display: block;
+  font-size: 28px;
+  font-weight: bold;
+}
+#profilePost .information{
+  color: var(--second-text);
+  font-size: 16px;
+  margin-top: 10px;
+}
+/* end profile page */
 
 .carousel-item:after {
   content: "";
@@ -1149,6 +1447,9 @@ footer h6{
   .owl-nav{
     display: none;
   }
+  #categoryCard{
+    margin-top: 20px;
+  }
   .owl-dot{
     outline:none !important;
     display: inline-block !important;
@@ -1358,7 +1659,7 @@ footer h6{
     width: 92%;
     /* width: 100%; */
   }
-
+  
   .img-responsive {
     height: 210px;
   }
