@@ -10,11 +10,11 @@
 	<!-- End of Meta Including -->
 
 	<!-- Title Start -->
-	<title>Candi Tikus | Travelinary</title>
+	<title>Rendang | Travelinary</title>
 	<!-- End of Title -->
 
 	<!-- CSS and JavaScript Including File -->
-	<link rel="icon" type="image/png" href="../../assets/logo/travelinaryIcon.png">
+	<link rel="icon" type="image/png" href="../../assets/logo/Logo Icon.svg">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Lora:wght@500;600;700&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
@@ -38,7 +38,7 @@
 	<input type="checkbox" id="check"></input>
 	<nav class="navbar navbar-expand-lg navbar-light">
 		<a class="navbar-brand" href="../../index.html">
-			<img src="../../assets/logo/travelinary.png" height="50" alt="Logo Travelinary">
+			<img src="../../assets/logo/Logo.svg" class="pt-1" height="40px" alt="Logo Travelinary">
 		</a>
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
 		  <span class="navbar-toggler-icon"></span>
@@ -87,7 +87,6 @@
 		</div>
 	  </nav>
 
-
 	<!-- End of Header -->
 
 	<!-- Start of Content -->
@@ -97,19 +96,19 @@
 				
 				<div class="col-lg-8">
 					<center>
-					<h2 class="font-weight-bold mb-3 header-mobile">Candi Tikus</h2>
+					<h2 class="font-weight-bold mb-3 header-mobile">Rendang</h2>
 					<div class="owl-carousel owl-theme detailPost mb-4">
 						<div class="items">
 
-							<img src="../../assets/img/wisata/candi-tikus.jpg" alt="">
+							<img src="../../assets/img/wisata/rendang.jpeg" alt="">
 						</div>
 						<div class="items">
 
-							<img src="../../assets/img/wisata/candi-tikus.jpg" alt="">
+							<img src="../../assets/img/wisata/rendang.jpeg" alt="">
 						</div>
 						<div class="items">
 
-							<img src="../../assets/img/wisata/candi-tikus.jpg" alt="">
+							<img src="../../assets/img/wisata/rendang.jpeg" alt="">
 						</div>
 
 					</div>
@@ -137,12 +136,12 @@
 				</div>
 				<div class="col-lg-1"></div>
 				<div class="col-lg-3 sidebar nunitoRegular">
-					<h2 class="font-weight-bold header-desktop">Candi Tikus</h2>
+					<h2 class="font-weight-bold header-desktop">Rendang</h2>
 					<div class="informasi mt-4">
 						<h5 class="font-weight-bold">Harga</h5>
-						<p>Rp. 16.000 - 100.000</p>
-						<h5 class="font-weight-bold">Alamat Lengkap</h5>
-						<p>Mojokerto, Jawa Timur</p>
+						<p>Rp. 16.000</p>
+						<h5 class="font-weight-bold">Asal Daerah</h5>
+						<p>Sumatera Barat</p>
 						<h5 class="font-weight-bold">Ulasan</h5>
 						<div class="stars">
 							<i class="fa fa-star text-warning"></i> 
@@ -172,21 +171,23 @@
 				</div>
 				
 				<div class="ulasan col-lg-12 row mt-5">
-					<div class="float-start col-lg-6">
-						<h3>Ulasan Pengunjung</h3>
+					<div class="float-start col-lg-6 header-desktop">
+						<h4>Ulasan Pengunjung</h4>
 					</div>
-					<div class="col-lg-6 mb-4" style="text-align: right;">
-						<button type="button" class="btn btn-pill nonAuth nunitoBold d-none px-4 pb-2" data-toggle="modal" data-target="#tambahUlasan">
+					<div class="col-lg-6 mb-4 header-desktop" style="text-align: right;">
+						<button type="button" class="btn btn-pill nonAuth nunitoBold d-none px-4" data-toggle="modal" data-target="#tambahUlasan">
 							Tambah Ulasan
 						  </button>
 
-						  <button type="button" class="btn btn-pill auth nunitoBold d-none px-4 pb-2" data-toggle="modal" data-target="#tambahUlasanLogin">
+						  <button type="button" class="btn btn-pill auth nunitoBold d-none px-4" data-toggle="modal" data-target="#tambahUlasanLogin">
 							Tambah Ulasan
 						  </button>
-
-
 						
-
+					</div>
+					<div class="col-12">
+					<center>
+						<h4 class="header-mobile nunitoBold mb-5">Ulasan Pengunjung</h4>
+					</center>
 					</div>
 					<div class="col-lg-4 col-6">
 						<div class="card card-ulasan">
@@ -333,12 +334,13 @@
 						  </div>
 					</div>
 					<div class="col-md-12 mt-3 text-center">
-						<button class="btn btn-md btn-pill px-4">Lebih Banyak</button>
+						<button class="btn btn-md btn-pill">Lebih Banyak</button>
 					</div>
 				</div>
 			</div>
 		</div>
-		<!-- wisata -->
+
+				<!-- wisata -->
 		<!-- Modal -->
 <div class="modal fade" id="tambahUlasan" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
 	<div class="modal-dialog" role="document">
@@ -486,29 +488,27 @@
 	<!-- End of Including JavaScript File -->
 
 	<script>
-				$(document).ready(function() {
-			let aman = localStorage.getItem('authLogin');
-			if(aman){
-				$('.nonAuth').addClass('d-none');
-				$('.auth').removeClass('d-none');
-			}else{
-				$('.nonAuth').removeClass('d-none');
-				$('.auth').addClass('d-none');
-			}
+		$(document).ready(function() {
+	let aman = localStorage.getItem('authLogin');
+	if(aman){
+		$('.nonAuth').addClass('d-none');
+		$('.auth').removeClass('d-none');
+	}else{
+		$('.nonAuth').removeClass('d-none');
+		$('.auth').addClass('d-none');
+	}
 
-			$('.logout').click(function(){
-				localStorage.removeItem('authLogin');
-				window.location.href = '../../Login.html';
-			})
-
-
-			$('.detailPost').owlCarousel({
+	$('.logout').click(function(){
+		localStorage.removeItem('authLogin');
+		window.location.href = '../../Login.html';
+	})
+	$('.detailPost').owlCarousel({
       loop:true,
       nav:false,
       items:1,
   })
-		});
-	</script>
+});
+</script>
 </body>
 
 </html>
