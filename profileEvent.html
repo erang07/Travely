@@ -43,7 +43,7 @@
 		</button>
 		<div class="collapse navbar-collapse" id="navbarNavDropdown">
 		  <ul class="navbar-nav mx-auto">
-			<li class="nav-item active">
+			<li class="nav-item">
 				<a class="nav-link nunitoSemiBold" href="index.html">Beranda</a>
 			</li>
 			<li class="nav-item">
@@ -58,10 +58,24 @@
 				<a class="nav-link nunitoSemiBold" href="#contact">Kontak</a>
 			</li>
 		  </ul>
-		  <div class="auth">
+		  <div class="auth avatar">
 			<div class="d-flex align-items-center">
-				<img src="assets/icon/Photo Profile.svg" width="40" alt="">
-				<h5 class="nunitoSemiBold ml-2 my-0">Apin</h5>
+				<div class="col-12 pl-0">
+					<a
+					class="nunitoRegular align-items-center d-flex dropdown-toggle"
+					data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					<img src="assets/icon/Photo Profile.svg" width="40" alt="">
+					<h5 class="nunitoSemiBold ml-2 my-0">Apin</h5> <i class="fas ml-1 fa-angle-down"></i>
+				</a>
+				<div class="dropdown-menu">
+					<a class="dropdown-item" href="#">
+						<i class="fas mr-2 fa-user"></i>
+						Profile</a>
+					<a class="dropdown-item" href="#">
+						<i class="fas mr-2 fa-sign-out-alt"></i>
+						Logout</a>
+				</div>
+				</div>
 			</div>
 		</div>
 		</div>
@@ -743,7 +757,7 @@
 			
 
 			
-							<button type="submit" class="btn btn-pill w-100 px-4 mt-3">Edit Profile</button>
+							<button type="submit" class="btn btn-pill w-100 px-4 mt-3">Ubah Profile</button>
 						  </form>
 					  </div>
 					  <form>
