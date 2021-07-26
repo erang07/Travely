@@ -526,6 +526,7 @@ nav ul li a:hover {
 }
 #wisata .card .love img{
   width: 100%;
+  
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
 }
@@ -562,13 +563,13 @@ nav ul li a:hover {
 #event .card .iconLove p{
   color: white;
 }
-#event .card .love{
+#event .card .love-event{
   position: relative;
 }
 #event .card img{
   width: 100px;
 }
-#event .card .love img{
+#event .card .love-event img{
   width: 100%;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
@@ -618,6 +619,7 @@ nav ul li a:hover {
   padding-top: 20px;
   background: linear-gradient(to top, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0));
 }
+
 .totalComments{
   color: var(--second-text);
   margin-left: 10px;
@@ -668,6 +670,7 @@ nav ul li a:hover {
 }
 #categoryCard .card .love img{
   width: 100%;
+  /* height: 128pt; */
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
 }
@@ -1094,7 +1097,7 @@ section.module.parallax h1 {
 }
 .card .price{
   color: var(--third-text);
-  font-size: 22px;
+  font-size: 18px !important;
   font-weight: 600;
 }
 
@@ -1694,6 +1697,14 @@ footer h6{
   }
   
   /* end detail-page */
+  /* destinasi */
+  #categoryCard .card .love img{
+    height: 128pt;
+    
+  }
+  #event .card .love-event img{
+    height: 150pt;
+  }
 }
 
 @media screen and (min-width: 576px) and (max-width: 768px) {
