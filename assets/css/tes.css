@@ -3,7 +3,7 @@ body {
   padding: 0;
   font-family: sans-serif;
   min-height: 100vh;
-  background: linear-gradient(135deg, #0f4675, #0f4675 60%, #fff 60%, #fff 100%);
+  background: linear-gradient(135deg, #FABC02, #FABC02 60%, #fff 60%, #fff 100%);
   overflow: hidden;
 }
 
@@ -41,7 +41,7 @@ div.message p {
   margin: 0 0 30px;
   padding: 0;
   font-size: 37.5px;
-  color: #fff;
+  color: #000;
   text-align: center;
 }
 
@@ -50,7 +50,7 @@ div.message p {
   margin-bottom: 30px;
   padding: 0;
   font-size: 25px;
-  color: #fff;
+  color: #000;
   text-align: center;
 }
 
@@ -62,7 +62,7 @@ div.message p {
   width: 100%;
   padding: 10px 0;
   font-size: 16px;
-  color: #fff;
+  color: #000;
   margin-bottom: 30px;
   border: none;
   outline: none;
@@ -75,7 +75,7 @@ div.message p {
   left: 0;
   padding: 10px 0;
   font-size: 16px;
-  color: #fff;
+  color: #000;
   pointer-events: none;
   transition: 0.25s;
 }
@@ -84,7 +84,7 @@ div.message p {
 .box .inputBox input:valid~label {
   top: -22.5px;
   left: 0;
-  color: #03a9f4;
+  color: #000;
   font-size: 12px;
   font-weight: bolder;
 }
@@ -106,7 +106,7 @@ div.message p {
   left: 0;
   width: 100%;
   height: 100%;
-  background: #00b0ff;
+  background: #000;
   transform: scaleX(0);
   transform-origin: right;
   transition: transform 0.25s ease-in-out;
@@ -122,25 +122,29 @@ div.message p {
 }
 
 .box h5 a {
-  color: #fff;
+  color: #000;
   text-decoration: none;
 }
 
 .box input[type="button"] {
   border: none;
+  border-radius: 5px;
   box-shadow: none;
   padding: 10px 25px;
-  background: #00bcd4;
+  background: #000;
   color: #fff;
   font-size: 16px;
   cursor: pointer;
   font-weight: bolder;
+  border: 0.1px solid #000;
 }
 
 .box input[type="button"]:hover {
   font-weight: bolder;
-  color: #00bcd4;
+  color: #000;
   background: #fff;
+  border: 0.1px solid #FABC02 ;
+  transition: 0.3s;
 }
 
 /* Contact Style Start */
@@ -227,7 +231,7 @@ ul li a span:after {
   width: 100%;
   height: 100%;
   background: #fff;
-  color: #fff;
+  color: #000;
   font-size: 25px;
   transform-origin: bottom;
   transition: transform 0.5s;

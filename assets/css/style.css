@@ -108,7 +108,14 @@ input::placeholder{
   letter-spacing: 0.5px;
   font-weight: bold;
 }
-
+.btn-pill-light{
+  background-color: white;
+  border: 1px solid var(--color-orange);
+  border-radius:20px;
+  color: var(--color-orange);
+  letter-spacing: 0.5px;
+  font-weight: bold;
+}
 a:hover{
   text-decoration: none !important;
   color: var(--color-orange) !important;
@@ -714,6 +721,31 @@ nav ul li a:hover {
 }
 /* end profile page */
 
+/* detail page */
+#detail-page{
+  margin-top: 6rem;
+}
+.carousel-detail{
+  width: 100%;
+  height: 23rem;
+  background-attachment: fixed;
+}
+.carousel-detail img{
+  height: 100%;
+  background-attachment: fixed;
+}
+.slide{
+  width: 90%;
+}
+.slide-text{
+  width: 90%;
+  
+}
+.stars{
+  font-size: 17px;
+}
+/* end detail page */
+
 .carousel-item:after {
   content: "";
   display: block;
@@ -1200,7 +1232,7 @@ section.module.parallax h1 {
 }
 
 .ratenow, .star {
-  font-size: 20px;
+  font-size: 1px;
 }
 
 .prev-next {
@@ -1291,7 +1323,7 @@ footer h6{
     padding-left: 20px;
     padding-bottom: 20px;
   }
-
+  
   /* nav ul.list {
     margin-top: -30px;
     width: 100%;
@@ -1461,6 +1493,24 @@ footer h6{
   .btn-share {
     margin-left: 20px;
   }
+  /* detail page */
+  .header-desktop{
+    display: none;
+  }
+  .sidebar{
+    margin-left: 1.5rem;
+  }
+  .card-ulasan{
+    width: 13rem;
+    font-size: 10px;
+  }
+  .card-ulasan img{
+    width: 45px;
+  }
+  .card-ulasan h5, .card-ulasan i{
+    font-size: 12px;
+  }
+  /* end detail page */
 }
 
 @media screen and (max-width: 768px) {
@@ -1560,6 +1610,20 @@ footer h6{
   section.slideshow div.title p {
     line-height: 70px;
   }
+
+  /* detail-page */
+  .header-mobile{
+    display: none;
+  }
+  .card-ulasan{
+    width: 100%;
+  }
+  .card-ulasan .card-text{
+    margin-top:18px;
+    font-size: 15px;
+  }
+  
+  /* end detail-page */
 }
 
 @media screen and (min-width: 576px) and (max-width: 768px) {
