@@ -544,7 +544,7 @@ nav ul li a:hover {
 
 /* event section */
 #event{
-  margin-top: 8rem;
+  margin-top: 2rem;
   margin-bottom: 8rem;
 }
 
@@ -606,7 +606,7 @@ nav ul li a:hover {
   margin-top: 6rem;
 }
 #categoryCard{
-  margin-top: 4rem;
+  margin-top: 2rem;
 }
 #categoryCard .card{
   opacity: 0;
@@ -1377,6 +1377,9 @@ footer h6{
     margin: 0;
     padding: 0;
   } */
+  #event{
+    margin-top: 10px;
+  }
   nav .dropdown-menu{
     margin-left: 0px ;
   }

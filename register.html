@@ -14,10 +14,13 @@
 	<!-- End of Title -->
 
 	<!-- CSS and JavaScript Including File -->
-	<link rel="icon" type="image/png" href="assets/logo/Logo Icon.svg">
+	<link rel="icon" type="image/png" href="assets/logo/travelinaryIcon.png">
 	<link rel="stylesheet" type="text/css" href="assets/css/tes.css">
 	<script src="assets/js/fontawesome.js"></script>
-
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Lora:wght@500;600;700&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="assets/lib/bootstrap/css/bootstrap.min.css">
 	<!-- End of Including File -->
 
 </head>
@@ -26,16 +29,13 @@
 
 	<!-- Logo -->
 	<div class="logo">
-		<img src="assets/img/header/maskot.jpg">
-		<div class="message">
-			<p>Join with Travelinary !</p>
-		</div>
+		<img src="assets/logo/travelinary.png" alt="Logo Travelinary">
 	</div>
 	<!-- End of Logo -->
 
 	<!-- Box Register Start -->
 	<div class="box">
-		<h3>Create your own account</h3>
+		<h3>Daftar</h3>
 		<form>
 			<div class="inputBox">
 				<input type="text" name="" required></input>
@@ -48,11 +48,6 @@
 				<span class="input nim"></span>
 			</div>
 			<div class="inputBox">
-				<input type="text" name="" required></input>
-				<label>Username</label>
-				<span class="input user"></span>
-			</div>
-			<div class="inputBox">
 				<input type="password" name="" required></input>
 				<label>Password</label>
 				<span class="input pass"></span>
@@ -62,9 +57,10 @@
 				<label>Re-Password</label>
 				<span class="input pass"></span>
 			</div>
-			<center>
-			<a href="login.html"><input type="button" name="" value="Buat Akun"></input></a>
-			</center>
+			<div class="d-flex justify-content-between align-items-center mt-4">
+				<a href="javascript:void(0)" class="authLogin"><input type="button" name="" value="Daftar"></input></a>
+				<a href="login.html" class="mb-0 pb-0">Sudah punya akun?</a>
+			</div>
 		</form>
 	</div>
 	<!-- End of Box Register -->
@@ -81,6 +77,9 @@
 	</div>
 	<!-- End of Contact -->
 
+	<script type="text/javascript" src="assets/js/jquery.min.js"></script>
+	<script type="text/javascript" src="assets/js/popper.min.js"></script>
+	<script type="text/javascript" src="assets/lib/bootstrap/js/bootstrap.min.js"></script>
 </body>
 
 </html>
