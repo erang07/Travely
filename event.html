@@ -42,7 +42,7 @@
 		</button>
 		<div class="collapse navbar-collapse" id="navbarNavDropdown">
 		  <ul class="navbar-nav mx-auto">
-			<li class="nav-item active">
+			<li class="nav-item">
 				<a class="nav-link nunitoSemiBold" href="index.html">Beranda</a>
 			</li>
 			<li class="nav-item">
@@ -50,7 +50,7 @@
 				  Destinasi
 				</a>
 			  </li>
-			<li class="nav-item">
+			<li class="nav-item active">
 				<a class="nav-link nunitoSemiBold" href="event.html">Event</a>
 			</li>
 			<li class="nav-item">
@@ -334,7 +334,13 @@
         $(document).ready(function() {
           $('.js-example-basic-multiple').select2();
           $('.js-example-basic-single').select2();
+          $('#categoryCard .card').each(function(i){
+            setTimeout(function(){
+                $('#categoryCard .card').eq(i).addClass('bottomToTop');
+            }, 300 * i);
+        });
       });
+
         // end select 2
       
         // filter

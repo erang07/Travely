@@ -53,7 +53,9 @@ $(document).ready(function() {
 });
 
 $(window).on('scroll', function() {
-  if ($(window).scrollTop()) 
+  let scrollTop = $(this).scrollTop();
+
+  if (scrollTop) 
   {
     $('nav').addClass('black');
   }
@@ -100,3 +102,4 @@ $(document).ready(function() {
     $(".row.pop").css("opacity", "0");
   });  
 });
+

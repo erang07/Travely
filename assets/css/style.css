@@ -34,7 +34,7 @@ body {
 /* lora = medium,lora semi bold,lora bold */
 /* nunito = regular,nunito semi bold,nunito bold */
 
-h1,h2,h3,h4,h5,h6,p,small,span,a,label,button,input{
+h1,h2,h3,h4,h5,h6,p,small,span,a,label,button,input,textarea{
   font-family: 'Nunito', sans-serif;
   color: var(--first-text);
 }
@@ -276,12 +276,21 @@ background-color: rgba(250, 188, 2, 0.1) !important;
 }
 /* end owl carousel */
 
-/* form */
-form textarea{
-  border: 1px solid var(--third-text) !important;
-  border-radius: 6px;
+/* animation */
+.rightToLeft{
+  animation: rightToLeft 1s alternate forwards;
 }
-/* end form */
+.leftToRight{
+  animation: leftToRight 1s alternate forwards;
+}
+.bottomToTop{
+  animation: bottomToTop 1s alternate forwards;
+}
+.opacityAnimation{
+  animation: opacity 1s alternate forwards;
+}
+
+/* end animation */
 
 /* end templatetravelinary */
 
@@ -295,12 +304,24 @@ nav {
   transition: 0.5s;
   z-index: 10;
 }
-
 nav i.fa-angle-down{
   font-size: 14px;
 }
 nav .dropdown-menu{
-  margin-top: 6px !important;
+  margin-left: -50px;
+}
+nav .avatar:hover{
+  cursor: pointer;
+}
+nav .avatar:hover i,
+nav .avatar:hover h5{
+  color: var(--color-orange);
+}
+nav .fa-sign-out-alt{
+  color: var(--color-red) !important;
+}
+nav .fa-user{
+  color: var(--color-green) !important;
 }
 nav.black {
   left: 0;
@@ -369,27 +390,21 @@ nav ul li a:hover {
 }
 .banner .animation1{
   opacity: 0;
-  animation: leftToRight 0.6s ease-in forwards;
+  animation: opacity 0.5s ease-in forwards;
 }
 .banner .animation2{
   opacity: 0;
-  animation: leftToRight 0.6s 0.5s ease-in forwards;
+  animation: opacity 0.5s 0.5s ease-in forwards;
 } 
 .banner .animation3{
   opacity: 0;
-  animation: leftToRight 0.6s 1s ease-in forwards;
+  animation: opacity 0.5s 1s ease-in forwards;
 } 
 .banner .animation4{
   opacity: 0;
-  animation: leftToRight 0.6s 1.5s ease-in forwards;
+  animation: opacity 0.5s 1.5s ease-in forwards;
 } 
-@keyframes leftToRight{
-  from{
-    opacity: 0;
-  }to{
-    opacity: 1;
-    }
-}
+
 .banner .btn-pill{
   padding-top: 10px;
   padding-bottom: 10px;
@@ -445,6 +460,12 @@ nav ul li a:hover {
   padding: 14px;
   margin-top: 20px;
   border-radius: 10px;
+}
+#hint img,
+#hint a,
+#hint h4,
+#hint h2{
+  opacity: 0;
 }
 /* End Hint Section */
 
@@ -555,6 +576,9 @@ nav ul li a:hover {
 }
 #categoryCard{
   margin-top: 4rem;
+}
+#categoryCard .card{
+  opacity: 0;
 }
 #categoryCard .iconLove{
   position: absolute;
@@ -1311,7 +1335,9 @@ footer h6{
     margin: 0;
     padding: 0;
   } */
-
+  nav .dropdown-menu{
+    margin-left: 0px ;
+  }
   .navbar-collapse{
     background-color: white;
     position: absolute;
@@ -1517,6 +1543,7 @@ footer h6{
   .owl-nav{
     display: none;
   }
+
   #categoryCard{
     margin-top: 20px;
   }
@@ -1808,3 +1835,40 @@ footer h6{
 } */
 
 /* End Responsive */
+/* animation template */
+
+@keyframes bottomToTop{
+  from{
+    opacity: 0;
+    margin-top: 40px;
+}to{
+    opacity: 1;
+    margin-top: 0px;
+}
+}
+@keyframes opacity{
+  from{
+    opacity: 0;
+  }to{
+    opacity: 1;
+}
+}
+@keyframes leftToRight{
+  from{
+    opacity: 0;
+    margin-right:40px;
+}to{
+    opacity: 1;
+    margin-right:40px;
+}
+}
+@keyframes rightToLeft{
+  from{
+    opacity: 0;
+    margin-left:40px;
+}to{
+    opacity: 1;
+    margin-left:0px;
+}
+}
+/* end animation template */

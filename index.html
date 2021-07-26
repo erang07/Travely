@@ -78,7 +78,9 @@
 				<a href="destinasi.html" class="btn btn-pill-large px-4 mt-2 animation4">Jelajahi Sekarang</a>
 			</div>
 			<div class="col-12 col-lg-6 align-self-center mt-5 mt-lg-0">
-				<img src="assets/img/img-header.svg" width="100%" alt="">
+				<div class="animationImg">
+					<img src="assets/img/img-header2.png" width="100%" alt="">
+				</div>
 			</div>
 		</div>
 	</div>
@@ -114,9 +116,11 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-6 col-12">
-					<img src="assets/img/img-laptop.svg" width="100%">
+					<div class="animationImg2">	
+						<img src="assets/img/img-laptop.png" width="100%">
+					</div>
 				</div>
-				<div class="col-lg-6 col-12 align-self-center mt-5 mt-lg-0">
+				<div class="col-lg-6 col-12 align-self-center mt-5 mt-lg-0 desc">
 					<h2 class="loraBold">Kamu Bisa Mencari atau Mempublish</h2>
 						<div class="column">
 							<img src="assets/icon/Checklist.svg" height="30"> <h4 class="mb-0 ml-2">Wisata</h4>
@@ -128,8 +132,8 @@
 							<img src="assets/icon/Checklist.svg" height="30"> <h4 class="mb-0 ml-2">Event</h4>
 						</div>
 					<div class="row align-items-center mt-4 ml-1">
-						<a href="#" class="mr-4 btn btn-pill-stroke px-4 nunitoBold">Publish</a>
-						<a href="#" class="btn btn-pill px-4">Cari Sekarang</a>
+						<a href="profileWisata.html" class="mr-4 btn btn-pill-stroke px-4 nunitoBold">Publish</a>
+						<a href="destinasi.html" class="btn btn-pill px-4">Cari Sekarang</a>
 					</div>
 				</div>
 			</div>
@@ -756,9 +760,32 @@
 	  <script type="text/javascript" src="assets/js/popper.min.js"></script>
 	  <script type="text/javascript" src="assets/lib/bootstrap/js/bootstrap.min.js"></script>
 	<script src="assets/lib/owlcarousel/owl.carousel.min.js"></script>
+	<script src="assets/js/tilt.jquery.min.js"></script>
 	<script src="assets/js/script.js"></script>
 	<!-- End of Including JavaScript File -->
+	<script>
 
+$('.animationImg').tilt({
+    maxTilt:6,
+});
+$('.animationImg2').tilt({
+  maxTilt:6,
+});
+$(window).on('scroll', function() {
+  let scrollTop = $(this).scrollTop();
+
+  if(scrollTop > $('#hint .desc').offset().top - 300){
+    $('#hint .desc h2').addClass('bottomToTop');
+    $('#hint .desc h4').addClass('bottomToTop');
+    $('#hint .desc a').addClass('bottomToTop');
+    $('#hint .desc img').addClass('bottomToTop');
+}
+
+if(scrollTop > $('#hint .animationImg2').offset().top - 300){
+  $('#hint .animationImg2 img').addClass('bottomToTop');
+}
+})
+	</script>
 
 </body>
 
