@@ -58,10 +58,30 @@
 				<a class="nav-link nunitoSemiBold" href="#contact">Kontak</a>
 			</li>
 		  </ul>
-		  <div class="auth">
+		  <div class="nonAuth d-none">
 			<a href="Login.html" class="nunitoSemiBold mr-3">Masuk</a>
 			<a href="register.html" class="btn btn-pill px-4">Daftar</a>
 		  </div>
+		<div class="auth avatar d-none">
+			<div class="d-flex align-items-center">
+				<div class="col-12 pl-0">
+					<a
+					class="nunitoRegular align-items-center d-flex dropdown-toggle"
+					data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					<img src="assets/icon/Photo Profile.svg" width="40" alt="">
+					<h5 class="nunitoSemiBold ml-2 my-0">Apin</h5> <i class="fas ml-1 fa-angle-down"></i>
+				</a>
+				<div class="dropdown-menu">
+					<a class="dropdown-item" href="profileWisata.html">
+						<i class="fas mr-2 fa-user"></i>
+						Profile</a>
+					<a class="dropdown-item logout" href="javascript:void(0)">
+						<i class="fas mr-2 fa-sign-out-alt"></i>
+						Logout</a>
+				</div>
+				</div>
+			</div>
+		</div>
 		</div>
 	  </nav>
 
@@ -132,7 +152,10 @@
 							<img src="assets/icon/Checklist.svg" height="30"> <h4 class="mb-0 ml-2">Event</h4>
 						</div>
 					<div class="row align-items-center mt-4 ml-1">
-						<a href="profileWisata.html" class="mr-4 btn btn-pill-stroke px-4 nunitoBold">Publish</a>
+						<a href="javascript:void(0)" class="btn btn-pill-stroke mr-4 nonAuth d-none nunitoBold px-4" data-toggle="modal" data-target="#publishLogin">
+							Publish
+						  </a>
+						<a href="profileWisata.html" class="mr-4 btn btn-pill-stroke auth d-none px-4 nunitoBold">Publish</a>
 						<a href="destinasi.html" class="btn btn-pill px-4">Cari Sekarang</a>
 					</div>
 				</div>
@@ -149,7 +172,7 @@
 					<h5 class="textOrange loraSemiBold">Wisata Favorit</h5>
 					<h2 class="loraBold">10 Wisata Paling Banyak Diminati</h2>
 				</div>
-				<div class="owl-carousel owl-theme">
+				<div class="owl-carousel owl-theme topPost">
 					<a href="">
 						<div class="card">
 					<div class="love">
@@ -442,7 +465,7 @@
 					<h5 class="textOrange loraSemiBold">Kuliner Favorit</h5>
 					<h2 class="loraBold">10 Kuliner Paling Banyak Diminati</h2>
 				</div>
-				<div class="owl-carousel owl-theme">
+				<div class="owl-carousel owl-theme topPost">
 						<a href="">
 							<div class="card">
 						<div class="love">
@@ -636,10 +659,31 @@
 	
 			
 			</div>
-			<div class="row justify-content-end d-flex mt-4 d-md-none">
+			<div class="row justify-content-center d-flex mt-4 d-md-none">
 				<a href="#" class="btn backgroundOrange btn-pill px-4 mb-2">Lebih Banyak</a>
 			</div>
 		</div>
+
+		<!-- modal -->
+		<div class="modal fade" id="publishLogin" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			<div class="modal-dialog" role="document">
+			  <div class="modal-content">
+				<div class="modal-header">
+				  <h5 class="modal-title" id="exampleModalLabel">Publish</h5>
+				  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				  </button>
+				</div>
+				<div class="modal-body" style="justify-items: center;display: grid;">
+					<img src="../../assets/icon/Big Mark.svg" width="100">
+				  <h4 class="text-center nunitoSemiBold mt-3">Untuk Publish Wisata, Kuliner atau Event Anda Harus Masuk Terlebih Dahulu</h4>
+				  <a href="Login.html" class="btn btn-pillNonAnimation w-100 px-4 my-3">Masuk</a>
+				</div>
+			  </div>
+			</div>
+		  </div>
+		<!-- end modal -->
+
 	</section>
 	<!-- <div class="container">
 		<div class="row galeri">
@@ -764,12 +808,27 @@
 	<script src="assets/js/script.js"></script>
 	<!-- End of Including JavaScript File -->
 	<script>
+		$(document).ready(function() {
+			let aman = localStorage.getItem('authLogin');
+			if(aman){
+				$('.nonAuth').addClass('d-none');
+				$('.auth').removeClass('d-none');
+			}else{
+				$('.nonAuth').removeClass('d-none');
+				$('.auth').addClass('d-none');
+			}
+
+			$('.logout').click(function(){
+				localStorage.removeItem('authLogin');
+				window.location.href = 'Login.html';
+			})
 
 $('.animationImg').tilt({
     maxTilt:6,
 });
 $('.animationImg2').tilt({
   maxTilt:6,
+});
 });
 $(window).on('scroll', function() {
   let scrollTop = $(this).scrollTop();

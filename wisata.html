@@ -57,10 +57,30 @@
 				<a class="nav-link nunitoSemiBold" href="#contact">Kontak</a>
 			</li>
 		  </ul>
-		  <div class="auth">
-			<a href="#" class="nunitoSemiBold mr-3">Masuk</a>
-			<a href="#" class="btn btn-pill px-4">Daftar</a>
+          <div class="nonAuth d-none">
+			<a href="Login.html" class="nunitoSemiBold mr-3">Masuk</a>
+			<a href="register.html" class="btn btn-pill px-4">Daftar</a>
 		  </div>
+		<div class="auth avatar d-none">
+			<div class="d-flex align-items-center">
+				<div class="col-12 pl-0">
+					<a
+					class="nunitoRegular align-items-center d-flex dropdown-toggle"
+					data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					<img src="assets/icon/Photo Profile.svg" width="40" alt="">
+					<h5 class="nunitoSemiBold ml-2 my-0">Apin</h5> <i class="fas ml-1 fa-angle-down"></i>
+				</a>
+				<div class="dropdown-menu">
+					<a class="dropdown-item" href="profileWisata.html">
+						<i class="fas mr-2 fa-user"></i>
+						Profile</a>
+					<a class="dropdown-item logout" href="javascript:void(0)">
+						<i class="fas mr-2 fa-sign-out-alt"></i>
+						Logout</a>
+				</div>
+				</div>
+			</div>
+		</div>
 		</div>
 	  </nav>
 
@@ -412,11 +432,30 @@
     <script src="assets/lib/select2/js/select2.min.js"></script>
     <script src="assets/js/script.js"></script>
     <script>
+         // select 2
+         $(document).ready(function() {
+            let aman = localStorage.getItem('authLogin');
+	if(aman){
+		$('.nonAuth').addClass('d-none');
+		$('.auth').removeClass('d-none');
+	}else{
+		$('.nonAuth').removeClass('d-none');
+		$('.auth').addClass('d-none');
+	}
 
-        // select 2
-        $(document).ready(function() {
+	$('.logout').click(function(){
+		localStorage.removeItem('authLogin');
+		window.location.href = 'Login.html';
+    })
+    
           $('.js-example-basic-multiple').select2();
           $('.js-example-basic-single').select2();
+
+           $('#categoryCard .card').each(function(i){
+            setTimeout(function(){
+                $('#categoryCard .card').eq(i).addClass('bottomToTop');
+            }, 300 * i);
+        });
       });
         // end select 2
       

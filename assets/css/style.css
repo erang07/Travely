@@ -85,6 +85,13 @@ input::placeholder{
   letter-spacing: 0.5px;
   font-weight: bold;
 }
+.btn-pillNonAnimation{
+  background-color: var(--color-orange);
+  border-radius:20px;
+  color: white;
+  letter-spacing: 0.5px;
+  font-weight: bold;
+}
 .btn-pill-large{
   background-color: var(--color-orange);
   border-radius:20px;
@@ -118,7 +125,7 @@ input::placeholder{
 }
 a:hover{
   text-decoration: none !important;
-  color: var(--color-orange) !important;
+  color: var(--color-orange);
 }
 a.btn-pill:hover{
   transform: scale(1.06);
@@ -226,7 +233,7 @@ a.dropdown-item:hover{
 /* end card */
 
 /* owl carousel */
-.owl-item{
+.topPost .owl-item{
   padding: 20px;
 }
 .owl-nav{
@@ -258,7 +265,7 @@ background-color: rgba(250, 188, 2, 0.1) !important;
 
 }
 
-.owl-dot{
+.topPost .owl-dot{
   display: none !important;
 }
 
@@ -291,6 +298,29 @@ background-color: rgba(250, 188, 2, 0.1) !important;
 }
 
 /* end animation */
+
+/* stars */
+.star-widget input{
+  display: none;
+}
+.star-widget{
+  float: left;
+}
+.star-widget label{
+  font-size: 32px;
+  color: darkgray;
+  float: right;
+  padding: 0px 2px;
+  transition: all 0.3s ease;
+}
+input:not(:checked) ~ label:hover,
+input:not(:checked) ~ label:hover ~ label{
+  color: orange;
+}
+input:checked ~ label{
+  color: orange;
+}
+/* end stars */
 
 /* end templatetravelinary */
 
@@ -1096,7 +1126,16 @@ section.module.parallax h1 {
 .img-responsive {
   height: 170px;
 }
-
+.detailPost .owl-dot{
+  outline:none !important;
+  display: inline-block !important;
+}
+.detailPost .owl-dot span{
+  background-color: rgba(250, 188, 2, 0.3) !important;
+}
+.detailPost .owl-dot.active span{
+  background-color: var(--color-orange) !important;
+}
 /* end destination */
 /* event */
 .img-event {
@@ -1349,6 +1388,10 @@ footer h6{
     padding-left: 20px;
     padding-bottom: 20px;
   }
+  .navbar-collapse ul,.nonAuth{
+    padding-left: 20px;
+    padding-bottom: 20px;
+  }
   
   /* nav ul.list {
     margin-top: -30px;
@@ -1547,15 +1590,15 @@ footer h6{
   #categoryCard{
     margin-top: 20px;
   }
-  .owl-dot{
+  .topPost .owl-dot{
     outline:none !important;
     display: inline-block !important;
     margin-top: 10px;
   }
-  .owl-dot span{
+  .topPost .owl-dot span{
     background-color: rgba(250, 188, 2, 0.3) !important;
   }
-  .owl-dot.active span{
+  .topPost .owl-dot.active span{
     background-color: var(--color-orange) !important;
   }
   section.slideshow .quotes {

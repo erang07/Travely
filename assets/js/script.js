@@ -32,7 +32,7 @@ $(document).ready(function() {
     });
     // End scroll to section
 
-    $('.owl-carousel').owlCarousel({
+    $('.topPost').owlCarousel({
       loop:true,
       nav:true,
       margin:100,
