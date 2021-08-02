@@ -544,7 +544,7 @@ nav ul li a:hover {
 
 /* event section */
 #event{
-  margin-top: 2rem;
+  margin-top: 6rem;
   margin-bottom: 8rem;
 }
 
@@ -598,6 +598,57 @@ nav ul li a:hover {
   margin-top: 10px;
 }
 
+
+#eventDetail{
+  margin-top: 4rem;
+}
+
+#eventDetail .iconLove{
+  position: absolute;
+  bottom: 0;
+  left:0;
+  width: 100%;
+  padding-top: 20px;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0));
+}
+#eventDetail .card .iconLove p{
+  color: white;
+}
+#eventDetail .card .love-event{
+  position: relative;
+}
+#eventDetail .card img{
+  width: 100px;
+}
+#eventDetail .card .love-event img{
+  width: 100%;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+#eventDetail .desc i{
+  color: var(--color-green);
+  margin-right: 10px;
+}
+
+#eventDetail .card{
+  width: 20rem;
+  border:none;
+  min-height: 300px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 20px;
+}
+#eventDetail .card .date{
+  color: var(--color-orange);
+  display: block;
+  font-size: 28px;
+  font-weight: bold;
+}
+#eventDetail .information{
+  color: var(--second-text);
+  font-size: 16px;
+  margin-top: 10px;
+}
+
 /* end event section */
 
 
@@ -606,7 +657,7 @@ nav ul li a:hover {
   margin-top: 6rem;
 }
 #categoryCard{
-  margin-top: 2rem;
+  margin-top: 4rem;
 }
 #categoryCard .card{
   opacity: 0;
@@ -1377,11 +1428,12 @@ footer h6{
     margin: 0;
     padding: 0;
   } */
-  #event{
-    margin-top: 10px;
-  }
   nav .dropdown-menu{
     margin-left: 0px ;
+  }
+  .scrollHorizontal{
+    overflow-y: scroll;
+    padding: 10px;
   }
   .navbar-collapse{
     background-color: white;
@@ -1596,6 +1648,9 @@ footer h6{
   #categoryCard{
     margin-top: 20px;
   }
+  #eventDetail{
+    margin-top: 20px;
+  }
   .topPost .owl-dot{
     outline:none !important;
     display: inline-block !important;
@@ -1706,6 +1761,9 @@ footer h6{
     
   }
   #event .card .love-event img{
+    height: 150pt;
+  }
+  #eventDetail .card .love-event img{
     height: 150pt;
   }
 }
