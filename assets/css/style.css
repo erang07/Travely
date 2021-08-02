@@ -659,6 +659,13 @@ nav ul li a:hover {
 #categoryCard{
   margin-top: 4rem;
 }
+#categoryCard .row{
+  max-width: 100%;
+}
+#categoryCard .container{
+  justify-items: center !important;
+  display: grid;
+}
 #categoryCard .card{
   opacity: 0;
 }
