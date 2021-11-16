@@ -37,7 +37,7 @@
 	<!-- Header Start -->
 	<input type="checkbox" id="check"></input>
 	<nav class="navbar navbar-expand-lg navbar-light">
-		<a class="navbar-brand" href="../../index.html">
+		<a class="navbar-brand" href="../../index.php">
 			<img src="../../assets/logo/travelinary.png" height="50" alt="Logo Travelinary">
 		</a>
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -46,23 +46,23 @@
 		<div class="collapse navbar-collapse" id="navbarNavDropdown">
 		  <ul class="navbar-nav mx-auto">
 			<li class="nav-item">
-				<a class="nav-link nunitoSemiBold" href="../../index.html">Beranda</a>
+				<a class="nav-link nunitoSemiBold" href="../../index.php">Beranda</a>
 			</li>
 			<li class="nav-item active">
-				<a class="nav-link nunitoSemiBold" href="../../destinasi.html">
+				<a class="nav-link nunitoSemiBold" href="../../destinasi.php">
 				  Destinasi
 				</a>
 			  </li>
 			<li class="nav-item">
-				<a class="nav-link nunitoSemiBold" href="../../event.html">Event</a>
+				<a class="nav-link nunitoSemiBold" href="../../event.php">Event</a>
 			</li>
 			<li class="nav-item">
 				<a class="nav-link nunitoSemiBold" href="#contact">Kontak</a>
 			</li>
 		  </ul>
 		  <div class="nonAuth d-none">
-			<a href="../../Login.html" class="nunitoSemiBold mr-3">Masuk</a>
-			<a href="../../register.html" class="btn btn-pill px-4">Daftar</a>
+			<a href="../../Login.php" class="nunitoSemiBold mr-3">Masuk</a>
+			<a href="../../register.php" class="btn btn-pill px-4">Daftar</a>
 		  </div>
 		  <div class="auth avatar d-none">
 			<div class="d-flex align-items-center">
@@ -74,7 +74,7 @@
 					<h5 class="nunitoSemiBold ml-2 my-0">Apin</h5> <i class="fas ml-1 fa-angle-down"></i>
 				</a>
 				<div class="dropdown-menu">
-					<a class="dropdown-item" href="../../profileWisata.html">
+					<a class="dropdown-item" href="../../profileWisata.php">
 						<i class="fas mr-2 fa-user"></i>
 						Profile</a>
 					<a class="dropdown-item logout" href="javascript:void(0)">
@@ -498,7 +498,7 @@
 
 			$('.logout').click(function(){
 				localStorage.removeItem('authLogin');
-				window.location.href = '../../Login.html';
+				window.location.href = '../../Login.php';
 			})
 
 

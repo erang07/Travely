@@ -10,7 +10,7 @@
 	<!-- End of Meta Including -->
 
 	<!-- Title Start -->
-	<title>Gudeg | Travelinary</title>
+	<title>Raja Ampat | Travelinary</title>
 	<!-- End of Title -->
 
 	<!-- CSS and JavaScript Including File -->
@@ -37,7 +37,7 @@
 	<!-- Header Start -->
 	<input type="checkbox" id="check"></input>
 	<nav class="navbar navbar-expand-lg navbar-light">
-		<a class="navbar-brand" href="../../index.html">
+		<a class="navbar-brand" href="../../index.php">
 			<img src="../../assets/logo/travelinary.png" height="50" alt="Logo Travelinary">
 		</a>
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -46,23 +46,23 @@
 		<div class="collapse navbar-collapse" id="navbarNavDropdown">
 		  <ul class="navbar-nav mx-auto">
 			<li class="nav-item">
-				<a class="nav-link nunitoSemiBold" href="../../index.html">Beranda</a>
+				<a class="nav-link nunitoSemiBold" href="../../index.php">Beranda</a>
 			</li>
 			<li class="nav-item active">
-				<a class="nav-link nunitoSemiBold" href="../../destinasi.html">
+				<a class="nav-link nunitoSemiBold" href="../../destinasi.php">
 				  Destinasi
 				</a>
 			  </li>
 			<li class="nav-item">
-				<a class="nav-link nunitoSemiBold" href="../../event.html">Event</a>
+				<a class="nav-link nunitoSemiBold" href="../../event.php">Event</a>
 			</li>
 			<li class="nav-item">
 				<a class="nav-link nunitoSemiBold" href="#contact">Kontak</a>
 			</li>
 		  </ul>
 		  <div class="nonAuth d-none">
-			<a href="../../Login.html" class="nunitoSemiBold mr-3">Masuk</a>
-			<a href="../../register.html" class="btn btn-pill px-4">Daftar</a>
+			<a href="../../Login.php" class="nunitoSemiBold mr-3">Masuk</a>
+			<a href="../../register.php" class="btn btn-pill px-4">Daftar</a>
 		  </div>
 		  <div class="auth avatar d-none">
 			<div class="d-flex align-items-center">
@@ -74,7 +74,7 @@
 					<h5 class="nunitoSemiBold ml-2 my-0">Apin</h5> <i class="fas ml-1 fa-angle-down"></i>
 				</a>
 				<div class="dropdown-menu">
-					<a class="dropdown-item" href="../../profileWisata.html">
+					<a class="dropdown-item" href="../../profileWisata.php">
 						<i class="fas mr-2 fa-user"></i>
 						Profile</a>
 					<a class="dropdown-item logout" href="javascript:void(0)">
@@ -87,6 +87,7 @@
 		</div>
 	  </nav>
 
+
 	<!-- End of Header -->
 
 	<!-- Start of Content -->
@@ -96,19 +97,19 @@
 				
 				<div class="col-lg-8">
 					<center>
-					<h2 class="font-weight-bold mb-3 header-mobile">Gudeg</h2>
+					<h2 class="font-weight-bold mb-3 header-mobile">Raja Ampat</h2>
 					<div class="owl-carousel owl-theme detailPost mb-4">
 						<div class="items">
 
-							<img src="../../assets/img/wisata/gudeg2.jpeg" alt="">
+							<img src="../../assets/img/wisata/raja-ampat.jpeg" alt="">
 						</div>
 						<div class="items">
 
-							<img src="../../assets/img/wisata/gudeg1.jpeg" alt="">
+							<img src="../../assets/img/wisata/raja-ampat.jpeg" alt="">
 						</div>
 						<div class="items">
 
-							<img src="../../assets/img/wisata/gudeg1.jpeg" alt="">
+							<img src="../../assets/img/wisata/raja-ampat.jpeg" alt="">
 						</div>
 
 					</div>
@@ -136,12 +137,12 @@
 				</div>
 				<div class="col-lg-1"></div>
 				<div class="col-lg-3 sidebar nunitoRegular">
-					<h2 class="font-weight-bold header-desktop">Gudeg</h2>
+					<h2 class="font-weight-bold header-desktop">Raja Ampat</h2>
 					<div class="informasi mt-4">
 						<h5 class="font-weight-bold">Harga</h5>
-						<p>Rp. 16.000 - 100.000</p>
-						<h5 class="font-weight-bold">Asal Daerah</h5>
-						<p>Daerah Istimewa Yogyakarta</p>
+						<p>Rp. 16,000</p>
+						<h5 class="font-weight-bold">Alamat Lengkap</h5>
+						<p>Papua Barat</p>
 						<h5 class="font-weight-bold">Ulasan</h5>
 						<div class="stars">
 							<i class="fa fa-star text-warning"></i> 
@@ -182,7 +183,10 @@
 						  <button type="button" class="btn btn-pill auth nunitoBold d-none px-4 pb-2" data-toggle="modal" data-target="#tambahUlasanLogin">
 							Tambah Ulasan
 						  </button>
+
+
 						
+
 					</div>
 					<div class="col-lg-4 col-6">
 						<div class="card card-ulasan">
@@ -329,13 +333,12 @@
 						  </div>
 					</div>
 					<div class="col-md-12 mt-3 text-center">
-						<button class="btn btn-md btn-pill">Lebih Banyak</button>
+						<button class="btn btn-md btn-pill px-4">Lebih Banyak</button>
 					</div>
 				</div>
 			</div>
 		</div>
-
-				<!-- wisata -->
+		<!-- wisata -->
 		<!-- Modal -->
 <div class="modal fade" id="tambahUlasan" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
 	<div class="modal-dialog" role="document">
@@ -483,27 +486,29 @@
 	<!-- End of Including JavaScript File -->
 
 	<script>
-		$(document).ready(function() {
-	let aman = localStorage.getItem('authLogin');
-	if(aman){
-		$('.nonAuth').addClass('d-none');
-		$('.auth').removeClass('d-none');
-	}else{
-		$('.nonAuth').removeClass('d-none');
-		$('.auth').addClass('d-none');
-	}
+				$(document).ready(function() {
+			let aman = localStorage.getItem('authLogin');
+			if(aman){
+				$('.nonAuth').addClass('d-none');
+				$('.auth').removeClass('d-none');
+			}else{
+				$('.nonAuth').removeClass('d-none');
+				$('.auth').addClass('d-none');
+			}
 
-	$('.logout').click(function(){
-		localStorage.removeItem('authLogin');
-		window.location.href = '../../Login.html';
-	})
-	$('.detailPost').owlCarousel({
+			$('.logout').click(function(){
+				localStorage.removeItem('authLogin');
+				window.location.href = '../../Login.php';
+			})
+
+
+			$('.detailPost').owlCarousel({
       loop:true,
       nav:false,
       items:1,
   })
-});
-</script>
+		});
+	</script>
 </body>
 
 </html>

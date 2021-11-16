@@ -10,7 +10,7 @@
 	<!-- End of Meta Including -->
 
 	<!-- Title Start -->
-	<title>Festival Aceh Culinary | Travelinary</title>
+	<title>Tour de Singkarak | Travelinary</title>
 	<!-- End of Title -->
 
 	<!-- CSS and JavaScript Including File -->
@@ -37,7 +37,7 @@
 	<!-- Header Start -->
 	<input type="checkbox" id="check"></input>
 	<nav class="navbar navbar-expand-lg navbar-light">
-		<a class="navbar-brand" href="../index.html">
+		<a class="navbar-brand" href="../index.php">
 			<img src="../assets/logo/travelinary.png" height="50" alt="Logo Travelinary">
 		</a>
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -46,23 +46,23 @@
 		<div class="collapse navbar-collapse" id="navbarNavDropdown">
 		  <ul class="navbar-nav mx-auto">
 			<li class="nav-item">
-				<a class="nav-link nunitoSemiBold" href="../index.html">Beranda</a>
+				<a class="nav-link nunitoSemiBold" href="../index.php">Beranda</a>
 			</li>
 			<li class="nav-item">
-				<a class="nav-link nunitoSemiBold" href="../destinasi.html">
+				<a class="nav-link nunitoSemiBold" href="../destinasi.php">
 				  Destinasi
 				</a>
 			  </li>
 			<li class="nav-item active">
-				<a class="nav-link nunitoSemiBold" href="../event.html">Event</a>
+				<a class="nav-link nunitoSemiBold" href="../event.php">Event</a>
 			</li>
 			<li class="nav-item">
 				<a class="nav-link nunitoSemiBold" href="#contact">Kontak</a>
 			</li>
 		  </ul>
 		  <div class="nonAuth d-none">
-			<a href="../Login.html" class="nunitoSemiBold mr-3">Masuk</a>
-			<a href="../register.html" class="btn btn-pill px-4">Daftar</a>
+			<a href="../Login.php" class="nunitoSemiBold mr-3">Masuk</a>
+			<a href="../register.php" class="btn btn-pill px-4">Daftar</a>
 		  </div>
 		  <div class="auth avatar d-none">
 			<div class="d-flex align-items-center">
@@ -74,7 +74,7 @@
 					<h5 class="nunitoSemiBold ml-2 my-0">Apin</h5> <i class="fas ml-1 fa-angle-down"></i>
 				</a>
 				<div class="dropdown-menu">
-					<a class="dropdown-item" href="../profileWisata.html">
+					<a class="dropdown-item" href="../profileWisata.php">
 						<i class="fas mr-2 fa-user"></i>
 						Profile</a>
 					<a class="dropdown-item logout" href="javascript:void(0)">
@@ -96,18 +96,18 @@
 				
 				<div class="col-lg-8">
 					<center>
-					<h2 class="font-weight-bold mb-3 header-mobile">Festival Aceh Culinary</h2>
+					<h2 class="font-weight-bold mb-3 header-mobile">Tour de Singkarak</h2>
 					<div class="owl-carousel owl-theme detailPost mb-4">
 						<div class="items">
-							<img src="../assets/img/event/event4.jpeg" alt="">
+							<img src="../assets/img/event/event2.jpg" alt="">
 						</div>
 						<div class="items">
 
-							<img src="../assets/img/event/event4.jpg" alt="">
+							<img src="../assets/img/event/event2.jpg" alt="">
 						</div>
 						<div class="items">
 
-							<img src="../assets/img/event/event4.jpg" alt="">
+							<img src="../assets/img/event/event2.jpg" alt="">
 						</div>
 
 					</div>
@@ -139,12 +139,12 @@
 				</div>
 				<div class="col-lg-1"></div>
 				<div class="col-lg-3 sidebar nunitoRegular">
-					<h2 class="font-weight-bold header-desktop">Festival Aceh Culinary</h2>
+					<h2 class="font-weight-bold header-desktop">Indonesia Art Mart</h2>
 					<div class="informasi mt-4">
 						<h5 class="font-weight-bold">Harga</h5>
 						<p>Rp. 50.000</p>
 						<h5 class="font-weight-bold">Lokasi</h5>
-						<p>Banda Aceh, Aceh</p>
+						<p>Padang, Sumatera Barat</p>
                         <h5 class="font-weight-bold">Google Maps</h5>
 						<a href="https://goo.gl/maps/56Gmeo5daJgkUYzA8" class="textOrange">https://goo.gl/maps/QWA4f6XUJBSxxiei6</a>
 						
@@ -265,7 +265,7 @@
 
 	$('.logout').click(function(){
 		localStorage.removeItem('authLogin');
-		window.location.href = '../Login.html';
+		window.location.href = '../Login.php';
 	})
 
 	$('.detailPost').owlCarousel({
